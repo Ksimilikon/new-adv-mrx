@@ -32,4 +32,13 @@ class Card extends Model
     public function card_has_image() : HasOne{
         return $this->hasOne(card_has_image::class);
     }
+    public function card_has_tag() : HasMany{
+        return $this->hasMany(card_has_tag::class);
+    }
+    public function marked() : BelongsTo{
+        return $this->belongsTo(Marked::class);
+    }
+    public function listCardDeleted() : HasMany{
+        return $this->hasMany(ListCardDeleted::class);
+    }
 }

@@ -66,8 +66,6 @@ class CardInstructionCreate extends Component
 
     public function createNew()
     {
-        
-
         $this->validate();
 
         $previous = CardInstruction::where('card_id', $this->idCard)->orderBy('number', 'desc')->first();

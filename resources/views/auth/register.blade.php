@@ -3,7 +3,8 @@
         <title>Регистрация</title>
     </x-slot>
     <form method="POST" action="{{ route('register') }}"
-          class="border-radius-bottom bg-add p-2 flex flex-col gap-2 w-1/3 justify-center justify-self-center">
+          class="border-radius-bottom bg-add p-2 flex flex-col gap-2 w-1/3 
+          justify-center justify-self-center max-md:w-10/12">
         @csrf
 
         <!-- Name -->

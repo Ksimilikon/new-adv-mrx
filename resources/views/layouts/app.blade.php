@@ -48,7 +48,7 @@
 <body class="backgroundImage">
 <header class="flex flex-row w-full bg-main content-between justify-between">
     <div class="bg-gold w-1/12"></div>
-    @livewire('nav-menu')
+    <livewire:nav-menu />
     <div class="bg-gold w-1/12"></div>
 </header>
 <main class="flex justify-center">

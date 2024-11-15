@@ -24,6 +24,10 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.border-radius-right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .btn {
     @apply py-2 px-4 text-center select-none rounded;
 }
@@ -46,20 +50,23 @@
     @apply border-radius-bottom bg-add;
 
 }
-.nav-btn{
-    @apply text-white;
+.nav-select-mobile{
+    height: 15px;
+    width: 5px;
+    @apply border-radius-right bg-add;
 
 }
-.nav-btn-selecting{
+.nav-btn{
+    @apply text-white;
 
 }
 .nav-btn-selecting{
     background-color: #0a345e;
     @apply border-radius-bottom h-full ;
 }
-.nav-btn-selected{
-
-}
 .nav-btn:hover{
     @apply nav-btn-selecting;
+}
+.rounded-none{
+    border-radius: 0;
 }

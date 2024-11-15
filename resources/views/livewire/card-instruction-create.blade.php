@@ -11,7 +11,7 @@
                         <button class="w-full" wire:click='delete({{ $item->number }})'>X</button></div>
                 </div>
 
-                <div class="flex flex-row gap-5">
+                <div class="flex flex-row gap-5 max-md:flex-col">
                     <img class="h-32" src="{{ asset('images/'.$item->image_id.'.'.$item->extension) }}" alt="">
                     <p>{{ $item->description }}</p>
 

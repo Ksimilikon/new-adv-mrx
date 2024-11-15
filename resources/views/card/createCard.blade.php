@@ -4,7 +4,8 @@
     </x-slot>
     <x-auth-session-status class="mb-4" :status="session('status')" />
     <form action="{{ route('card.store') }}" method="post" enctype="multipart/form-data"
-          class="border-radius-bottom bg-add p-2 flex flex-col gap-2 w-1/3 justify-center justify-self-center">
+          class="border-radius-bottom bg-add p-2 flex flex-col gap-2 w-1/3 
+          justify-center justify-self-center max-md:w-10/12">
         @csrf
         <div>
             <x-input-label for="title" :value="__('Заголовок')" />
